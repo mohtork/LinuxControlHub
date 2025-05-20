@@ -1,6 +1,9 @@
+````markdown
 # LinuxControlHub
 
 LinuxControlHub is a powerful web application for Linux server infrastructure management, providing advanced automation, task orchestration, and comprehensive server management capabilities.
+
+> ⚠️ **This project is developed using _vibe coding_ — a rapid, intuitive development approach focused on shipping features fast. _Use at your own risk_. Carefully review the code and configurations before deploying in production.**
 
 ## Features
 
@@ -11,6 +14,19 @@ LinuxControlHub is a powerful web application for Linux server infrastructure ma
 - **Vulnerability Scanning**: Scan servers for security vulnerabilities using Vuls integration
 - **Metrics Monitoring**: Track CPU, memory, disk, and load average
 - **Role-Based Access Control**: Manage permissions with admin and user roles
+
+## Screenshots
+
+Below are some core features of LinuxControlHub in action:
+
+### 🖥️ Dashboard Overview
+![Dashboard Overview](images/001.gif)
+
+### 🛡️ Malware Scan Result
+![Malware Scan Result](images/002.gif)
+
+### 👥 User Management
+![User Management](images/003.gif)
 
 ## Deployment Options
 
@@ -33,7 +49,7 @@ Use Docker Compose for a containerized deployment. For detailed instructions, se
 ```bash
 git clone https://github.com/your-username/linux-control-hub.git
 cd linux-control-hub
-```
+````
 
 2. Run the setup script:
 
@@ -66,9 +82,9 @@ For a native installation on Ubuntu 22.04/24.04, see [Ubuntu Deployment Guide](d
 
 #### Prerequisites
 
-- Ubuntu 22.04 or 24.04 LTS
-- Root or sudo access
-- Internet connection
+* Ubuntu 22.04 or 24.04 LTS
+* Root or sudo access
+* Internet connection
 
 #### Quick Start with Ubuntu
 
@@ -123,12 +139,13 @@ linux-control-hub/
 ```
 
 For more information about:
-- Environment variables
-- Database management
-- SSL configuration
-- Ansible playbooks
-- Vulnerability scanning with Vuls
-- Troubleshooting
+
+* Environment variables
+* Database management
+* SSL configuration
+* Ansible playbooks
+* Vulnerability scanning with Vuls
+* Troubleshooting
 
 See the [Docker Deployment Guide](docs/docker-setup.md) and [Vuls Setup Guide](docs/vuls-setup.md).
 
@@ -165,6 +182,7 @@ sudo tar -czf linux-control-hub-backup.tar.gz backup.sql /opt/linux-control-hub/
 ### Restore from Backup
 
 For Docker:
+
 ```bash
 # Restore database
 cat backup.sql | docker-compose exec -T db psql -U postgres linux_control_hub
@@ -174,6 +192,7 @@ tar -xzf linux-control-hub-backup.tar.gz
 ```
 
 For Ubuntu:
+
 ```bash
 # Restore database
 cat backup.sql | sudo -u postgres psql linux_control_hub
@@ -195,20 +214,24 @@ For production deployments requiring high availability:
 ### Common Issues
 
 1. **Database Connection Errors**:
-   - Check PostgreSQL container is running: `docker-compose ps`
-   - Verify database credentials in `.env` file
+
+   * Check PostgreSQL container is running: `docker-compose ps`
+   * Verify database credentials in `.env` file
 
 2. **Permission Issues**:
-   - Ensure volumes have correct permissions: `chmod -R 755 ansible ssh-keys`
+
+   * Ensure volumes have correct permissions: `chmod -R 755 ansible ssh-keys`
 
 3. **Container Won't Start**:
-   - Check logs: `docker-compose logs app`
-   - Verify all environment variables are set correctly
+
+   * Check logs: `docker-compose logs app`
+   * Verify all environment variables are set correctly
 
 4. **Vuls Integration Issues**:
-   - Check Vuls container is running: `docker-compose ps`
-   - Run database initialization: `./initialize-vuls-db.sh`
-   - Check logs: `docker-compose logs vuls`
+
+   * Check Vuls container is running: `docker-compose ps`
+   * Run database initialization: `./initialize-vuls-db.sh`
+   * Check logs: `docker-compose logs vuls`
 
 ### Getting Help
 
@@ -216,7 +239,7 @@ If you encounter issues not covered in this documentation:
 
 1. Check the logs: `docker-compose logs app`
 2. Open an issue on GitHub
-3. Contact support at support@example.com
+3. Contact support at [support@example.com](mailto:support@example.com)
 
 ## License
 
@@ -224,4 +247,6 @@ If you encounter issues not covered in this documentation:
 
 ## Contributors
 
-- Your Name <your.email@example.com>
+* Your Name [your.email@example.com](mailto:your.email@example.com)
+
+```
