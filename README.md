@@ -1,4 +1,3 @@
-````markdown
 # LinuxControlHub
 
 LinuxControlHub is a powerful web application for Linux server infrastructure management, providing advanced automation, task orchestration, and comprehensive server management capabilities.
@@ -248,5 +247,3 @@ If you encounter issues not covered in this documentation:
 ## Contributors
 
 * Your Name [your.email@example.com](mailto:your.email@example.com)
-
-```
