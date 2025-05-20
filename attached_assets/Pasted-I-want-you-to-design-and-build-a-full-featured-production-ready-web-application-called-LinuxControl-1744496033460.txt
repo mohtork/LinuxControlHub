@@ -1,0 +1,96 @@
+I want you to design and build a full-featured, production-ready web application called LinuxControlHub that allows users to add, manage, and automate their Linux servers remotely via SSH. The app should support both direct command execution and Ansible playbook automation. You are free to choose the most suitable stack and tools (e.g., Django, Go, Node.js), but ensure security, scalability, and ease of use.
+
+✅ Core Features:
+🔐 User Authentication & Access
+Role-based access (Admin, Operator, Viewer)
+
+Login with 2FA support
+
+Encrypted storage of credentials (private keys, passwords)
+
+🖥️ Server Management
+Add server using IP, port, username, and password or SSH key
+
+Tagging/grouping servers
+
+Test connection before saving
+
+View server health: CPU, RAM, disk usage, uptime
+
+📟 Command Execution
+Web-based terminal to send SSH commands to a server
+
+Display real-time output
+
+Log command history with timestamp and user
+
+📋 Tasks & Automation
+Allow admins to define automation tasks using Ansible playbooks or roles
+
+Tasks are executed asynchronously using a job queue (e.g., Celery, Redis, RabbitMQ)
+
+Monitor task status: Queued → Running → Success/Failed
+
+Capture stdout, stderr, and exit codes
+
+🎯 Custom Playbooks from UI (Bonus Feature)
+Admins can upload Ansible playbooks or roles via UI
+
+Option to write or edit YAML playbooks in a code editor UI
+
+Associate uploaded playbooks with specific servers or groups
+
+Allow parameterized execution (pass variables at runtime)
+
+Store and reuse playbooks
+
+🔁 Scheduled & Bulk Execution
+Support scheduled tasks (via cron or background scheduler)
+
+Run playbooks/commands across multiple servers or tagged groups
+
+📦 Additional Tasks
+Install packages (apt, yum)
+
+Manage services (start/stop/restart systemd services)
+
+Create or delete Linux users
+
+Manage SSH keys
+
+Upload files
+
+Monitor logs (auth.log, syslog, etc.)
+
+📊 Logs & Auditing
+Task logs per server and per user
+
+Activity audit trail
+
+Exportable reports
+
+🧰 Suggested Tools (Optional, Not Mandatory)
+Backend: Django, Go, or Node.js
+
+Frontend: React or Vue
+
+Task queue: Celery (if Django) or Redis + workers (if Go)
+
+SSH handling: Paramiko (Python), x/crypto/ssh (Go)
+
+Ansible execution: ansible-playbook or ansible-runner
+
+Secure credentials: HashiCorp Vault or encrypted DB fields
+
+Web terminal: xterm.js or equivalent
+
+📦 Deliverables
+Full source code with backend, frontend, and database
+
+Dockerfile and docker-compose for easy deployment
+
+README with setup instructions
+
+Secure handling of sensitive data
+
+RESTful APIs (or GraphQL) for future integrations

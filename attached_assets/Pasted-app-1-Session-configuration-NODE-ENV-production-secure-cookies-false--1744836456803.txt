@@ -1,0 +1,98 @@
+app-1       | Session configuration: NODE_ENV=production, secure cookies=false                        
+app-1       | Creating initial admin account with username: admin and password: adminadmin
+app-1       | Ansible status: { installed: true, version: '2.18.4' }
+app-1       | 8:46:41 PM [express] serving on port 5000
+vuls-1      | flag provided but not defined: -dbpath
+vuls-1      | Server:
+vuls-1      |   Server                                                                                
+vuls-1      |           [-lang=en|ja]                                                                 
+vuls-1      |           [-config=/path/to/config.toml]                                                
+vuls-1      |           [-log-to-file]                                                                
+vuls-1      |           [-log-dir=/path/to/log]                                                       
+vuls-1      |           [-cvss-over=7]                                                                
+vuls-1      |           [-confidence-over=80]                                                         
+vuls-1      |           [-ignore-unscored-cves]                                                       
+vuls-1      |           [-ignore-unfixed]                                                             
+vuls-1      |           [-to-localfile]                                                               
+vuls-1      |           [-http-proxy=http://192.168.0.1:8080]                                         
+vuls-1      |           [-debug]                                                                      
+vuls-1      |           [-debug-sql]                                                                  
+vuls-1      |           [-listen=localhost:5515]                                                      
+vuls-1      |                                                                                         
+vuls-1      |           [RFC3339 datetime format under results dir]                                   
+vuls-1      |   -confidence-over int                                                                  
+vuls-1      |           -confidence-over=40 means reporting Confidence Score 40 and over (default: 80) (default 80)                                                                                         
+vuls-1      |   -config string
+vuls-1      |           /path/to/toml (default "/vuls/config.toml")                                   
+vuls-1      |   -cvss-over float                                                                      
+vuls-1      |           -cvss-over=6.5 means Servering CVSS Score 6.5 and over (default: 0 (means Server all))                                                                                              
+vuls-1      |   -debug
+vuls-1      |           debug mode                                                                    
+vuls-1      |   -debug-sql                                                                            
+vuls-1      |           SQL debug mode
+vuls-1      |   -http-proxy string                                                                    
+vuls-1      |           http://proxy-url:port (default: empty)                                        
+vuls-1      |   -ignore-unfixed                                                                       
+vuls-1      |           Don't show the unfixed CVEs                                                   
+vuls-1      |   -ignore-unscored-cves                                                                 
+vuls-1      |           Don't Server the unscored CVEs                                                
+vuls-1      |   -lang string                                                                          
+vuls-1      |           [en|ja] (default "en")                                                        
+vuls-1      |   -listen string                                                                        
+vuls-1      |           host:port (default: localhost:5515) (default "localhost:5515")                
+vuls-1      |   -log-dir string                                                                       
+vuls-1      |           /path/to/log (default "/var/log/vuls")                                        
+vuls-1      |   -log-to-file                                                                          
+vuls-1      |           Output log to file                                                            
+vuls-1      |   -results-dir string                                                                   
+vuls-1      |           /path/to/results (default "/vuls/results")                                    
+vuls-1      |   -to-localfile                                                                         
+vuls-1      |           Write report to localfile                                                     
+vuls-1 exited with code 2
+vuls-1      | flag provided but not defined: -dbpath
+vuls-1      | Server:
+vuls-1      |   Server                                                                                
+vuls-1      |           [-lang=en|ja]                                                                 
+vuls-1      |           [-config=/path/to/config.toml]                                                
+vuls-1      |           [-log-to-file]                                                                
+vuls-1      |           [-log-dir=/path/to/log]                                                       
+vuls-1      |           [-cvss-over=7]                                                                
+vuls-1      |           [-confidence-over=80]                                                         
+vuls-1      |           [-ignore-unscored-cves]                                                       
+vuls-1      |           [-ignore-unfixed]                                                             
+vuls-1      |           [-to-localfile]                                                               
+vuls-1      |           [-http-proxy=http://192.168.0.1:8080]                                         
+vuls-1      |           [-debug]                                                                      
+vuls-1      |           [-debug-sql]                                                                  
+vuls-1      |           [-listen=localhost:5515]
+vuls-1      |                                                                                         
+vuls-1      |           [RFC3339 datetime format under results dir]                                   
+vuls-1      |   -confidence-over int                                                                  
+vuls-1      |           -confidence-over=40 means reporting Confidence Score 40 and over (default: 80) (default 80)                                                                                         
+vuls-1      |   -config string
+vuls-1      |           /path/to/toml (default "/vuls/config.toml")                                   
+vuls-1      |   -cvss-over float                                                                      
+vuls-1      |           -cvss-over=6.5 means Servering CVSS Score 6.5 and over (default: 0 (means Server all))                                                                                              
+vuls-1      |   -debug
+vuls-1      |           debug mode                                                                    
+vuls-1      |   -debug-sql                                                                            
+vuls-1      |           SQL debug mode                                                                
+vuls-1      |   -http-proxy string                                                                    
+vuls-1      |           http://proxy-url:port (default: empty)                                        
+vuls-1      |   -ignore-unfixed                                                                       
+vuls-1      |           Don't show the unfixed CVEs                                                   
+vuls-1      |   -ignore-unscored-cves                                                                 
+vuls-1      |           Don't Server the unscored CVEs                                                
+vuls-1      |   -lang string                                                                          
+vuls-1      |           [en|ja] (default "en")                                                        
+vuls-1      |   -listen string                                                                        
+vuls-1      |           host:port (default: localhost:5515) (default "localhost:5515")                
+vuls-1      |   -log-dir string                                                                       
+vuls-1      |           /path/to/log (default "/var/log/vuls")                                        
+vuls-1      |   -log-to-file                                                                          
+vuls-1      |           Output log to file
+vuls-1      |   -results-dir string                                                                   
+vuls-1      |           /path/to/results (default "/vuls/results")                                    
+vuls-1      |   -to-localfile                                                                         
+vuls-1      |           Write report to localfile                                                     
+vuls-1 exited with code 2

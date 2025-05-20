@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Cookie files
+cookie.txt
+cookies.txt
+
+# Docker volumes
+docker/volumes/
+pgdata/
+docker-volumes/
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+
+# SSH keys - only keep the .gitkeep file
+ssh-keys/*
+!ssh-keys/.gitkeep
+
+# SSL certificates
+*.pem
+*.crt
+*.key
+*.csr
+ssl/
+
+# Ansible files except examples
+ansible/*
+!ansible/example/
+!ansible/.gitkeep
+
+# Vuls database and generated files
+vuls/results/
+vuls/db/
+vuls/log/
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Replit specific
+.replit
+replit.nix
+
+# Debug files
+.nyc_output/

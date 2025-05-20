@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: linuxservermanager-app
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - vuls
+    volumes:
+      - ./ansible:/app/ansible
+      - ./ssh-keys:/app/ssh-keys
+    environment:
+      - NODE_ENV=production
+    command: ["node", "dist/server/index.js"]
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  db:
+    image: postgres:15
+    container_name: linuxservermanager-db
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-linux_control_hub}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d linux_control_hub"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  vuls:
+    build:
+      context: ./vuls
+      dockerfile: Dockerfile
+    container_name: linuxservermanager-vuls
+    restart: always
+    depends_on:
+      - db
+    volumes:
+      - ./vuls:/vuls
+      - ./ssh-keys:/root/.ssh:ro
+      - ./ansible:/ansible:ro
+    ports:
+      - "127.0.0.1:5515:5515"  # Restricted to localhost for security
+    working_dir: /vuls
+    entrypoint: ["/bin/sh", "-c"]
+    command: [
+      "echo 'Starting Vuls server...' && 
+       vuls server -listen=0.0.0.0:5515 -results-dir=/vuls/results"
+    ]
+
+# For logging
+  logrotate:
+    image: blacklabelops/logrotate
+    volumes:
+      - /var/lib/docker/containers:/var/lib/docker/containers
+    environment:
+      - LOGS_DIRECTORIES=/var/lib/docker/containers
+      - LOGROTATE_INTERVAL=daily
+      - LOGROTATE_SIZE=50M
+      - LOGROTATE_COPIES=5
+
+volumes:
+  postgres-data:

@@ -1,0 +1,89 @@
+vuls-1 exited with code 2
+vuls-1      | Usage: vuls <flags> <subcommand> <subcommand args>
+vuls-1      | 
+vuls-1      | Subcommands:                                                                            
+vuls-1      |   commands         list all command names                                               
+vuls-1      |   flags            describe all known top-level flags                                   
+vuls-1      |   help             describe subcommands and their syntax                                
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for configtest:                                                             
+vuls-1      |   configtest       Test configuration                                                   
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for discover:                                                               
+vuls-1      |   discover         Host discovery in the CIDR                                           
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for history:                                                                
+vuls-1      |   history          List history of scanning.                                            
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for report:                                                                 
+vuls-1      |   report           Reporting                                                            
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for scan:                                                                   
+vuls-1      |   scan             Scan vulnerabilities                                                 
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for server:                                                                 
+vuls-1      |   server           Server                                                               
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for tui:                                                                    
+vuls-1      |   tui              Run Tui view to analyze vulnerabilities                              
+vuls-1      | 
+vuls-1      |                                                                                         
+vuls-1      | Use "vuls flags" for a list of top-level flags                                          
+vuls-1 exited with code 2
+vuls-1      | Usage: vuls <flags> <subcommand> <subcommand args>
+vuls-1      | 
+vuls-1      | Subcommands:                                                                            
+vuls-1      |   commands         list all command names                                               
+vuls-1      |   flags            describe all known top-level flags                                   
+vuls-1      |   help             describe subcommands and their syntax                                
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for configtest:                                                             
+vuls-1      |   configtest       Test configuration                                                   
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for discover:                                                               
+vuls-1      |   discover         Host discovery in the CIDR                                           
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for history:                                                                
+vuls-1      |   history          List history of scanning.                                            
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for report:                                                                 
+vuls-1      |   report           Reporting                                                            
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for scan:                                                                   
+vuls-1      |   scan             Scan vulnerabilities                                                 
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for server:                                                                 
+vuls-1      |   server           Server                                                               
+vuls-1      |                                                                                         
+vuls-1      | Subcommands for tui:                                                                    
+vuls-1      |   tui              Run Tui view to analyze vulnerabilities                              
+vuls-1      |                                                                                         
+vuls-1      |                                                                                         
+vuls-1      | Use "vuls flags" for a list of top-level flags                                          
+vuls-1 exited with code 2
+app-1       | Detected local PostgreSQL container...
+app-1       | Waiting for PostgreSQL to be ready...
+app-1       | PostgreSQL is unavailable - sleeping (attempt 1/30)                                     
+nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh   
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)                                                                                 
+nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh       
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up                       
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: using the "epoll" event method                        
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: nginx/1.27.4
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0)                   
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2           
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576             
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker processes                                
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 21                               
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 22                               
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 23                               
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 24
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 25                               
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 26                               
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 27                               
+nginx-1     | 2025/04/16 16:30:08 [notice] 1#1: start worker process 28                               
+app-1       | PostgreSQL is unavailable - sleeping (attempt 2/30)                                     

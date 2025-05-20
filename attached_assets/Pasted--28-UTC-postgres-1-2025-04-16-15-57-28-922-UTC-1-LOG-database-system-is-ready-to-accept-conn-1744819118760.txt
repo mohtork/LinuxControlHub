@@ -1,0 +1,233 @@
+:28 UTC
+postgres-1  | 2025-04-16 15:57:28.922 UTC [1] LOG:  database system is ready to accept connections
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1 exited with code 1
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1 exited with code 1
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      | 
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1 exited with code 1
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1 exited with code 1
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1 exited with code 1
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      | 
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1      | BusyBox v1.37.0 (2025-01-17 18:12:01 UTC) multi-call binary.
+vuls-1      |
+vuls-1      | Usage: mkdir [-m MODE] [-p] DIRECTORY...
+vuls-1      |
+vuls-1      | Create DIRECTORY
+vuls-1      |
+vuls-1      |   -m MODE Mode
+vuls-1      |   -p      No error if exists; make parent directories as needed
+vuls-1 exited with code 1
+Error response from daemon: error while creating mount source path '/run/desktop/mnt/host/wsl/docker-desktop-bind-mounts/Ubuntu-22.04/91b0cb7311e1229210f67e2da5ec1fd9304134d94865fe349b20290439c38dea': mkdir /run/desktop/mnt/host/wsl/docker-desktop-bind-mounts/Ubuntu-22.04/91b0cb7311e1229210f67e2da5ec1fd9304134d94865fe349b20290439c38dea: file exists
