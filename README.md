@@ -2,7 +2,7 @@
 
 LinuxControlHub is a powerful web application for Linux server infrastructure management, providing advanced automation, task orchestration, and comprehensive server management capabilities.
 
-> ⚠️ **This project is developed using _vibe coding_ — a rapid, intuitive development approach focused on shipping features fast. _Use at your own risk_. Carefully review the code and configurations before deploying in production.**
+> ⚠️ **This project is developed using _vibe coding_,  a rapid, intuitive development approach focused on shipping features fast. _Use at your own risk_. Carefully review the code and configurations before deploying in production.**
 
 ## Features
 
@@ -238,7 +238,6 @@ If you encounter issues not covered in this documentation:
 
 1. Check the logs: `docker-compose logs app`
 2. Open an issue on GitHub
-3. Contact support at [support@example.com](mailto:support@example.com)
 
 ## License
 
@@ -246,4 +245,5 @@ If you encounter issues not covered in this documentation:
 
 ## Contributors
 
-* Your Name [your.email@example.com](mailto:your.email@example.com)
+* Torkey
+* Replit (vibe coding)
