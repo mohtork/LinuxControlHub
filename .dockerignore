@@ -1,0 +1,55 @@
+# Git
+.git
+.gitignore
+
+# Node.js
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build artifacts
+dist
+build
+.cache
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# Temporary files
+tmp
+temp
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Docker related
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# SSH keys and other secure files
+ssh-keys/*
+!ssh-keys/.gitkeep
+
+# Ansible
+ansible/*
+!ansible/.gitkeep
+
+# Test files
+tests
+coverage
+.nyc_output

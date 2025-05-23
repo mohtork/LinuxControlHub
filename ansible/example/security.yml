@@ -1,0 +1,113 @@
+---
+# Example Ansible playbook for security hardening
+# This playbook demonstrates basic security hardening tasks for Linux servers
+
+- name: Security hardening
+  hosts: all
+  become: yes
+  vars:
+    ssh_port: 22
+    disable_root_login: yes
+    ssh_allow_groups: "sudo"
+    unattended_upgrades: yes
+    firewall_enabled: yes
+    firewall_allowed_tcp_ports:
+      - "{{ ssh_port }}"
+      - 80
+      - 443
+    fail2ban_enabled: yes
+
+  tasks:
+    # SSH hardening
+    - name: Configure SSH server
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "{{ item.regexp }}"
+        line: "{{ item.line }}"
+        state: present
+      loop:
+        - { regexp: '^#?Port', line: 'Port {{ ssh_port }}' }
+        - { regexp: '^#?PermitRootLogin', line: 'PermitRootLogin {{ "no" if disable_root_login else "yes" }}' }
+        - { regexp: '^#?PasswordAuthentication', line: 'PasswordAuthentication no' }
+        - { regexp: '^#?X11Forwarding', line: 'X11Forwarding no' }
+        - { regexp: '^#?AllowGroups', line: 'AllowGroups {{ ssh_allow_groups }}' }
+        - { regexp: '^#?MaxAuthTries', line: 'MaxAuthTries 3' }
+      notify: Restart SSH
+
+    # System updates
+    - name: Install unattended-upgrades
+      apt:
+        name: unattended-upgrades
+        state: present
+      when: unattended_upgrades and ansible_os_family == "Debian"
+      
+    - name: Configure unattended-upgrades
+      copy:
+        content: |
+          APT::Periodic::Update-Package-Lists "1";
+          APT::Periodic::Download-Upgradeable-Packages "1";
+          APT::Periodic::AutocleanInterval "7";
+          APT::Periodic::Unattended-Upgrade "1";
+        dest: /etc/apt/apt.conf.d/20auto-upgrades
+        owner: root
+        group: root
+        mode: 0644
+      when: unattended_upgrades and ansible_os_family == "Debian"
+      
+    # Firewall setup
+    - name: Install UFW
+      apt:
+        name: ufw
+        state: present
+      when: firewall_enabled and ansible_os_family == "Debian"
+      
+    - name: Configure UFW defaults
+      ufw:
+        state: enabled
+        policy: deny
+        direction: incoming
+      when: firewall_enabled and ansible_os_family == "Debian"
+    
+    - name: Allow UFW TCP ports
+      ufw:
+        rule: allow
+        port: "{{ item }}"
+        proto: tcp
+      loop: "{{ firewall_allowed_tcp_ports }}"
+      when: firewall_enabled and ansible_os_family == "Debian"
+
+    # Fail2ban setup
+    - name: Install fail2ban
+      apt:
+        name: fail2ban
+        state: present
+      when: fail2ban_enabled and ansible_os_family == "Debian"
+      
+    - name: Configure fail2ban
+      copy:
+        content: |
+          [sshd]
+          enabled = true
+          port = {{ ssh_port }}
+          filter = sshd
+          logpath = /var/log/auth.log
+          maxretry = 5
+          findtime = 600
+          bantime = 3600
+        dest: /etc/fail2ban/jail.local
+        owner: root
+        group: root
+        mode: 0644
+      when: fail2ban_enabled and ansible_os_family == "Debian"
+      notify: Restart fail2ban
+      
+  handlers:
+    - name: Restart SSH
+      service:
+        name: sshd
+        state: restarted
+        
+    - name: Restart fail2ban
+      service:
+        name: fail2ban
+        state: restarted

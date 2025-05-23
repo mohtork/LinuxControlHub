@@ -1,0 +1,27 @@
+# Vuls example configuration file
+# This is a minimal example - actual configuration is generated programmatically
+
+# General Vuls configuration
+[cveDict]
+type = "sqlite3"
+SQLite3Path = "/var/lib/vuls/cve.sqlite3"
+
+[ovalDict]
+type = "sqlite3"
+SQLite3Path = "/var/lib/vuls/oval.sqlite3"
+
+[gost]
+type = "sqlite3"
+SQLite3Path = "/var/lib/vuls/gost.sqlite3"
+
+[exploit]
+type = "sqlite3"
+SQLite3Path = "/var/lib/vuls/go-exploitdb.sqlite3"
+
+[metasploit]
+type = "sqlite3"
+SQLite3Path = "/var/lib/vuls/go-msfdb.sqlite3"
+
+# Default scan settings - actual servers are added programmatically
+[servers]
+# Server configurations will be generated at runtime

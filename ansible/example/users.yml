@@ -1,0 +1,49 @@
+---
+# Example Ansible playbook for creating users
+# This playbook demonstrates how to create users on target Linux servers
+
+- name: Create users
+  hosts: all
+  become: yes
+  vars:
+    users:
+      - username: appuser
+        comment: "Application User"
+        groups: ["sudo"]
+        shell: /bin/bash
+      - username: monitoring
+        comment: "Monitoring User"
+        groups: []
+        shell: /bin/bash
+
+  tasks:
+    - name: Create user accounts
+      user:
+        name: "{{ item.username }}"
+        comment: "{{ item.comment }}"
+        groups: "{{ item.groups | join(',') }}"
+        shell: "{{ item.shell }}"
+        state: present
+      loop: "{{ users }}"
+      
+    - name: Set up authorized keys
+      authorized_key:
+        user: "{{ item.username }}"
+        key: "{{ lookup('file', 'ssh-keys/' + item.username + '.pub') }}"
+        state: present
+      loop: "{{ users }}"
+      when: 
+        - item.username is defined
+        - lookup('file', 'ssh-keys/' + item.username + '.pub', errors='ignore')
+      ignore_errors: yes
+
+    - name: Set up sudo privileges
+      lineinfile:
+        path: /etc/sudoers.d/{{ item.username }}
+        line: "{{ item.username }} ALL=(ALL) NOPASSWD: ALL"
+        state: present
+        mode: 0440
+        create: yes
+        validate: 'visudo -cf %s'
+      loop: "{{ users }}"
+      when: "'sudo' in item.groups"

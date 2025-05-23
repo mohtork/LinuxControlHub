@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: linuxservermanager-app
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - vuls
+    volumes:
+      - ./client:/app/client
+      - ./server:/app/server
+      - ./shared:/app/shared
+      - ./ansible:/app/ansible
+      - ./ssh-keys:/app/ssh-keys
+    command: ["npm", "run", "dev"]
+
+  db:
+    image: postgres:15
+    container_name: linuxservermanager-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: linux_control_hub
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  vuls:
+    build:
+      context: ./vuls
+      dockerfile: Dockerfile
+    container_name: linuxservermanager-vuls
+    depends_on:
+      - db
+    volumes:
+      - ./vuls:/vuls
+      - ./ssh-keys:/root/.ssh:ro
+      - ./ansible:/ansible:ro
+    ports:
+      - "5515:5515"
+    working_dir: /vuls
+    entrypoint: ["/bin/sh", "-c"]
+    command: [
+      "echo 'Starting Vuls server without initializing databases...' && 
+       echo 'Note: For full vulnerability scanning, databases should be initialized separately using go-cve-dictionary' &&
+       vuls server -listen=0.0.0.0:5515 -results-dir=/vuls/results"
+    ]
+
+volumes:
+  postgres-data:
