@@ -4,6 +4,13 @@ LinuxControlHub is a powerful web application for Linux server infrastructure ma
 
 > ⚠️ **This project is developed using _vibe coding_,  a rapid, intuitive development approach focused on shipping features fast. _Use at your own risk_. Carefully review the code and configurations before deploying in production.**
 
+## 📖 Read the Story Behind This Project
+
+Curious how this project was built using vibe coding and AI assistance?  
+Check out the full article here:  
+👉 [My Experience With Vibe Coding: Can AI Really Build a Server Management App?](https://www.linkedin.com/pulse/my-experience-vibe-coding-can-ai-really-build-server-app-torkey-03yee)
+
+
 ## Features
 
 - **SSH Terminal Access**: Connect to your servers with in-browser terminal
